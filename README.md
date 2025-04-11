@@ -71,6 +71,17 @@ Nmap is used to identify and scan systems on the network. It is an important par
 ```bash
   nmap -f 10.0.2.15
 ```
+![image](https://github.com/user-attachments/assets/59f88d55-205c-4fc7-b110-c80d3f22ca66)
+
+2. Nmap scan with decoy (spoofed) IP addresses.
+
+```bash
+  nmap -D RND:10 10.10.36.11
+```
+![image](https://github.com/user-attachments/assets/1207cd13-1878-4391-8578-34c9dd2156aa)
+
+
+
 
 
 
