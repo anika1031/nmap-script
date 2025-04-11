@@ -20,7 +20,7 @@ Nmap is used to identify and scan systems on the network. It is an important par
 3. To scan all port
 
 ```bash
-  nmap -p- 10.0.2.15
+  nmap -p- 10.10.32.74
 ```
 ![WhatsApp Image 2025-01-29 at 10 08 24_4c0e1d63](https://github.com/user-attachments/assets/f9757491-bc86-4908-90c7-ae3d1ca7169e)
 
@@ -36,7 +36,7 @@ Nmap is used to identify and scan systems on the network. It is an important par
 5. To check the service and version
 
 ```bash
-  nmap -sV 10.0.2.15
+  nmap -sV 10.10.32.74
 ```
 ![image](https://github.com/user-attachments/assets/ee3db2d1-8c10-44e6-b62c-cb14ca20df54)
 
@@ -60,16 +60,24 @@ Nmap is used to identify and scan systems on the network. It is an important par
 8. To perform Stealth scanning
 
 ```bash
-  nmap -sS 10.0.2.15
+  nmap -sS 10.10.32.74
 ```
 ![image](https://github.com/user-attachments/assets/cede8099-4c03-4167-8bc9-14e655d08d2c)
+
+9. Performs a very fast scan, potentially missing some hosts or ports due to rate limiting. 
+
+```bash
+ nmap -T4 10.10.32.74
+```
+![WhatsApp Image 2025-01-29 at 10 37 30_b830dbb4](https://github.com/user-attachments/assets/257e1e3e-0c52-499f-a491-f99d65311966)
+
 
 #Firewall and IDS evasion
 
 1. To perform packet fragmenting 
 
 ```bash
-  nmap -f 10.0.2.15
+  nmap -f 10.10.36.11
 ```
 ![image](https://github.com/user-attachments/assets/59f88d55-205c-4fc7-b110-c80d3f22ca66)
 
@@ -79,6 +87,8 @@ Nmap is used to identify and scan systems on the network. It is an important par
   nmap -D RND:10 10.10.36.11
 ```
 ![image](https://github.com/user-attachments/assets/1207cd13-1878-4391-8578-34c9dd2156aa)
+
+
 
 
 
